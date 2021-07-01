@@ -8,8 +8,8 @@ interface Props {
 
 export default function LoadingComponent({inverted = true, content = 'Loading...'}: Props) {
     return (
-        <Dimmer activite={true} inverted={inverted}>
-            <Loader content={content}/>
+        <Dimmer active={true} inverted={inverted} >
+            <Loader content={content} />
         </Dimmer>
     )
 }
