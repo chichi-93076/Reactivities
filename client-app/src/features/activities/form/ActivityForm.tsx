@@ -3,9 +3,10 @@ import React, { ChangeEvent, useEffect } from 'react';
 import { useState } from 'react';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import { Button, Form, Segment } from 'semantic-ui-react';
-import LoadingComponent from '../../../../app/layout/LoadingComponent';
-import { useStore } from '../../../../app/stores/store';
+
 import {v4 as uuid } from "uuid";
+import LoadingComponent from '../../../app/layout/LoadingComponent';
+import { useStore } from '../../../app/stores/store';
 
 export default observer( function ActivityForm() {
     const history = useHistory();
